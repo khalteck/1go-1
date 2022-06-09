@@ -755,7 +755,7 @@ a:hover {
         align-items: center;
     }
     .logo-travel p{
-        margin-left: 0;
+        margin-left: 12px;
         font-weight: 700;
         font-size: 20px;
     }
