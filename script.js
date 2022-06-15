@@ -49,6 +49,8 @@ const home = document.getElementById("home");
 const second = document.getElementById("second");
 //the third section
 const third = document.getElementById("third");
+//the third section
+const fourth = document.getElementById("fourth");
 //all login buttons
 const login = document.getElementById("trigger-login");
 //all sign up buttons
@@ -57,6 +59,7 @@ login.addEventListener("click", () => {
     home.classList.add("hide")
     second.classList.add("hide")
     third.classList.add("hide")
+    fourth.classList.add("hide")
     document.getElementById("login").classList.remove("hide")
     document.getElementById("signup").classList.add("hide")
 });
@@ -64,6 +67,7 @@ signup.addEventListener("click", () => {
     home.classList.add("hide")
     second.classList.add("hide")
     third.classList.add("hide")
+    fourth.classList.add("hide")
     document.getElementById("login").classList.add("hide")
     document.getElementById("signup").classList.remove("hide")
 });
@@ -71,6 +75,7 @@ document.querySelector(".close-login").addEventListener("click", () => {
     home.classList.remove("hide");
     second.classList.remove("hide");
     third.classList.remove("hide");
+    fourth.classList.add("hide")
     document.getElementById("login").classList.add("hide");
     document.getElementById("signup").classList.add("hide");
 })
@@ -78,6 +83,7 @@ document.getElementById("trigger-login2").addEventListener("click", function() {
     home.classList.add("hide")
     second.classList.add("hide")
     third.classList.add("hide")
+    fourth.classList.add("hide")
     document.getElementById("login").classList.remove("hide")
     document.getElementById("signup").classList.add("hide")
 });
@@ -85,6 +91,7 @@ document.getElementById("trigger-signup2").addEventListener("click", function() 
     home.classList.add("hide")
     second.classList.add("hide")
     third.classList.add("hide")
+    fourth.classList.add("hide")
     document.getElementById("login").classList.add("hide")
     document.getElementById("signup").classList.remove("hide")
 });
@@ -93,6 +100,7 @@ document.getElementById("trigger-login-mob").addEventListener("click", () => {
     home.classList.add("hide")
     second.classList.add("hide")
     third.classList.add("hide")
+    fourth.classList.add("hide")
     document.getElementById("login").classList.remove("hide")
     document.getElementById("signup").classList.add("hide")
 });
@@ -100,6 +108,7 @@ document.getElementById("trigger-signup-mob").addEventListener("click", () => {
     home.classList.add("hide")
     second.classList.add("hide")
     third.classList.add("hide")
+    fourth.classList.add("hide")
     document.getElementById("login").classList.add("hide")
     document.getElementById("signup").classList.remove("hide")
 });

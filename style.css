@@ -105,13 +105,8 @@ header {
 .button1 {
     background-color: #1f66d0;
     color: #ffffff;
-<<<<<<< HEAD
     font-size: 12px;
     font-family: "Dosis", sans-serif;
-=======
-    font-size: 13px;
-    font-family: "Dosis", San-serif;
->>>>>>> efb9827f0f110a08660510ff206bbc9f69bfbee8
     font-weight: 900;
     border: 2px solid #1f66d0;
     margin: 0;
@@ -149,7 +144,7 @@ main {
     width: fit-content;
     height: fit-content;
     position: relative;
-    top: 23%;
+    top: 26%;
     margin: auto;
 }
 .line1 {
@@ -163,11 +158,7 @@ main {
     background-color: inherit;
     color: #ffffff;
     font-size: 20px;
-<<<<<<< HEAD
     font-family: "Dosis", sans-serif;
-=======
-    font-family: "Dosis", San-serif;
->>>>>>> efb9827f0f110a08660510ff206bbc9f69bfbee8
     font-weight: 900;
     border: 2px solid #1f66d0;
     margin: 0;
@@ -196,11 +187,7 @@ main {
     color: #ffffff;
     font-size: 18px;
     font-weight: 900;
-<<<<<<< HEAD
     font-family: "Dosis", sans-serif;
-=======
-    font-family: "Dosis", San-serif;
->>>>>>> efb9827f0f110a08660510ff206bbc9f69bfbee8
     border-radius: 20px;
     transition: all 0.3s ease-out;
 }
@@ -425,19 +412,24 @@ h1 {
     width: 85%;
     height: fit-content;
     margin: auto;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 .inter-state-cont {
     width: 100%;
     height: fit-content;
+    background-color: white;
     margin: auto;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
 }
 .inter-text-div {
     width: 40%;
     height: fit-content;
+    padding: 20px 0 0 20px; 
+    box-sizing: border-box;
 }
 .inter-text {
     font-size: 50px;
@@ -456,11 +448,7 @@ h1 {
     background-position: bottom;
 }
 .with-text {
-    color: rgba(65, 65, 65, 0.7);
     font-size: 22px;
-    font-style: normal;
-    font-weight: lighter;
-    margin: 0;
 }
 .overlay {
     width: 100%;
@@ -474,22 +462,18 @@ h1 {
     justify-content: space-between;
 }
 .img1 {
-    width: 37%;
+    width: 100%;
     height: 100%;
-    background: url("daniel-herron-FoL5zDvwQtg-unsplash.jpg");
+    background: url("illustration.jpg");
+    border-radius: 0 20px 20px 0;
     background-size: cover;
     background-position: center;
-    border-radius: 5px;
 }
-.img2 {
-    width: 60%;
-    height: 100%;
-    background: url("julentto-photography-CIuakYIjadc-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px;
+h2 {
+    font-size: 25px;
+    font-weight: 500;
 }
-.why {
+/*.why {
     width: 100%;
     height: fit-content;
     margin: auto;
@@ -510,10 +494,7 @@ h1 {
     background-color: #f1f0f0;
     box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
 }
-h2 {
-    font-size: 25px;
-    font-weight: 500;
-}
+
 .vector {
     width: 35%;
     height: 90px;
@@ -549,6 +530,42 @@ h2 {
     background-image: url("https://img.icons8.com/ios-filled/344/4a90e2/online-support.png");
     background-repeat: no-repeat;
     background-size: cover;
+}*/
+#fourth {
+    width: 85%;
+    height: fit-content;
+    margin: auto;
+    padding: 0 0 30px 0;
+    box-sizing: border-box;
+}
+.exp-cont {
+    width: 100%;
+    margin-bottom: 70px;
+}
+.exp-img-cont {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.exp-img-cont::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.exp-img {
+    width: 330px;
+    height: 100%;
+    background-color: rgba(232,244,255,255);
+    box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
+    display: inline-block;
+    margin: 0 15px 0 0;
+    border-radius: 20px;
 }
 #footer {
     width: 100%;
@@ -901,7 +918,7 @@ a:hover {
         background-color: #1f66d0;
         color: #ffffff;
         font-size: 13px;
-        font-family: "Dosis", San-serif;
+        font-family: "Dosis", Sans-serif;
         font-weight: 900;
         border: 2px solid #1f66d0;
         margin: 0;
@@ -941,7 +958,7 @@ a:hover {
         width: fit-content;
         height: fit-content;
         position: relative;
-        top: 32%;
+        top: 37%;
         margin: auto;
     }
     .line1 {
@@ -954,7 +971,7 @@ a:hover {
         background-color: inherit;
         color: #ffffff;
         font-size: 15px;
-        font-family: "Dosis", San-serif;
+        font-family: "Dosis", Sans-serif;
         font-weight: 900;
         border: 2px solid #1f66d0;
         margin: 0;
@@ -972,7 +989,7 @@ a:hover {
         height: 500px;
         display: block;
         justify-content: space-between;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     .button2 {
         width: fit-content;
@@ -983,11 +1000,7 @@ a:hover {
         color: #ffffff;
         font-size: 18px;
         font-weight: 900;
-<<<<<<< HEAD
         font-family: "Dosis", sans-serif;
-=======
-        font-family: "Dosis", San-serif;
->>>>>>> efb9827f0f110a08660510ff206bbc9f69bfbee8
         border-radius: 20px;
         transition: all 0.3s ease-out;
         display: none;
@@ -1173,7 +1186,7 @@ h3 {
     #second {
         width: 100%;
         height: fit-content;
-        margin-top: 50px;
+        margin-top: 40px;
     }
     h1 {
         width: 95%;
@@ -1221,7 +1234,7 @@ h3 {
         width: 95%;
         height: fit-content;
         margin: auto;
-        padding: 100px 0;
+        padding: 40px 0 20px 0;
         box-sizing: border-box;
     }
     .inter-state-cont {
@@ -1229,12 +1242,17 @@ h3 {
         height: fit-content;
         margin: 50px 0;
         box-sizing: border-box;
-        display: none;
+        display: block;
         justify-content: space-between;
+        border-radius: 20px;
+        box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
+        background: linear-gradient(-70deg, rgba(232,244,255,255), rgba(234,247,255,255), rgba(255, 255, 255));
     }
     .inter-text-div {
         width: 100%;
         height: fit-content;
+        padding: 20px 10px;
+        box-sizing: border-box;
     }
     .inter-text {
         font-size: 50px;
@@ -1250,14 +1268,10 @@ h3 {
         box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
         background-image: url("tayla-kohler-7I8HfObsLiY-unsplash.jpg");
         background-size: cover;
-        background-position: bottom;
+        background-position: center;
     }
     .with-text {
-        color: rgba(65, 65, 65, 0.7);
-        font-size: 22px;
-        font-style: normal;
-        font-weight: lighter;
-        margin: 0;
+        font-size: 20px;
     }
     .overlay {
         width: 100%;
@@ -1265,89 +1279,59 @@ h3 {
         background-color: rgba(31, 102, 208, 0.3);
     }
     .inter-img-cont {
-        width: 55%;
+        width: 100%;
         height: 400px;
         display: flex;
         justify-content: space-between;
+        margin-top: 50px;
     }
     .img1 {
-        width: 37%;
-        height: 100%;
-        background: url("daniel-herron-FoL5zDvwQtg-unsplash.jpg");
+        width: 100%;
+        height: auto;
+        background: url("illustration.jpg");
         background-size: cover;
-        background-position: center;
-        border-radius: 5px;
-    }
-    .img2 {
-        width: 60%;
-        height: 100%;
-        background: url("julentto-photography-CIuakYIjadc-unsplash.jpg");
-        background-size: cover;
-        background-position: center;
-        border-radius: 5px;
-    }
-    .why {
-        width: 100%;
-        height: fit-content;
-        margin: 0 0;
-        padding-top: 0;
-        box-sizing: border-box;
-    }
-    .feature-cont {
-        width: 100%;
-        height: fit-content;
-        display: block;
-    }
-    .feature-box {
-        width: 100%;
-        height: 300px;
-        border-radius: 10px;
-        padding-top: 5px;
-        box-sizing: border-box;
-        margin-bottom: 20px;
-        text-align: center;
-        background-color: #ffffff;
-        box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
+        background-position: right;
     }
     h2 {
         font-size: 25px;
         font-weight: 500;
     }
-    .vector {
-        width: 80px;
-        height: 90px;
-        border-radius: 10px;
+    #fourth {
+        width: 100%;
+        height: fit-content;
         margin: auto;
-        background-image: url("https://img.icons8.com/external-line-lima-studio/344/4a90e2/external-speed-5g-signal-line-lima-studio-2.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        padding: 0 0 30px 0;
+        box-sizing: border-box;
     }
-    .vector2 {
-        width: 80px;
-        height: 90px;
-        border-radius: 10px;
-        margin: auto;
-        background-image: url("https://img.icons8.com/external-flatart-icons-solid-flatarticons/2x/4a90e2/external-save-money-shopping-and-commerce-flatart-icons-solid-flatarticons.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+    .exp-cont {
+        width: 100%;
+        margin-bottom: 50px;
     }
-    .vector3 {
-        width: 80px;
-        height: 90px;
-        border-radius: 10px;
-        margin: auto;
-        background-image: url("https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/344/4a90e2/external-safety-customer-service-xnimrodx-lineal-xnimrodx.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+    .exp-img-cont {
+        width: 100%;
+        height: 250px;
+        margin-top: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
     }
-    .vector4 {
-        width: 80px;
-        height: 90px;
-        border-radius: 10px;
-        margin: auto;
-        background-image: url("https://img.icons8.com/ios-filled/344/4a90e2/online-support.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+    .exp-img-cont::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    .exp-img {
+        width: 300px;
+        height: 100%;
+        background-color: rgba(232,244,255,255);
+        box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
+        display: inline-block;
+        margin: 0 15px 0 0;
+        border-radius: 20px;
     }
     #footer {
         width: 100%;
