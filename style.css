@@ -105,8 +105,13 @@ header {
 .button1 {
     background-color: #1f66d0;
     color: #ffffff;
+<<<<<<< HEAD
     font-size: 12px;
     font-family: "Dosis", sans-serif;
+=======
+    font-size: 13px;
+    font-family: "Dosis", San-serif;
+>>>>>>> efb9827f0f110a08660510ff206bbc9f69bfbee8
     font-weight: 900;
     border: 2px solid #1f66d0;
     margin: 0;
@@ -158,7 +163,11 @@ main {
     background-color: inherit;
     color: #ffffff;
     font-size: 20px;
+<<<<<<< HEAD
     font-family: "Dosis", sans-serif;
+=======
+    font-family: "Dosis", San-serif;
+>>>>>>> efb9827f0f110a08660510ff206bbc9f69bfbee8
     font-weight: 900;
     border: 2px solid #1f66d0;
     margin: 0;
@@ -187,7 +196,11 @@ main {
     color: #ffffff;
     font-size: 18px;
     font-weight: 900;
+<<<<<<< HEAD
     font-family: "Dosis", sans-serif;
+=======
+    font-family: "Dosis", San-serif;
+>>>>>>> efb9827f0f110a08660510ff206bbc9f69bfbee8
     border-radius: 20px;
     transition: all 0.3s ease-out;
 }
@@ -847,7 +860,7 @@ a:hover {
         align-items: center;
     }
     .logo-travel p{
-        margin-left: 0;
+        margin-left: 9px;
         font-weight: 700;
         font-size: 20px;
     }
@@ -888,7 +901,7 @@ a:hover {
         background-color: #1f66d0;
         color: #ffffff;
         font-size: 13px;
-        font-family: cursive;
+        font-family: "Dosis", San-serif;
         font-weight: 900;
         border: 2px solid #1f66d0;
         margin: 0;
@@ -941,7 +954,7 @@ a:hover {
         background-color: inherit;
         color: #ffffff;
         font-size: 15px;
-        font-family: cursive;
+        font-family: "Dosis", San-serif;
         font-weight: 900;
         border: 2px solid #1f66d0;
         margin: 0;
@@ -970,7 +983,11 @@ a:hover {
         color: #ffffff;
         font-size: 18px;
         font-weight: 900;
+<<<<<<< HEAD
         font-family: "Dosis", sans-serif;
+=======
+        font-family: "Dosis", San-serif;
+>>>>>>> efb9827f0f110a08660510ff206bbc9f69bfbee8
         border-radius: 20px;
         transition: all 0.3s ease-out;
         display: none;
