@@ -14,34 +14,85 @@
     <body>
         <header id="header">
             <div id="mobile-navbar">
-                <div class="logo-travel">
-                    <a href="index.html"><img src="new-logo.jpeg" class="logo"></a>
-                    <p>tourism</p>
-                </div>
+                <a href="index.html">
+                    <div class="logo-travel">
+                        <img src="new-logo.jpeg" class="logo">
+                        <p style="color: black;">tourism</p>
+                    </div>
+                </a>
                 <div class="dropdown">
                     <button id="dropbtn"></button>
                     <button id="close-dropdown"></button>
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#" class="top-border">About Us</a>
+                        <a href="index.html" class="top-border">Home</a>
+                        <a href="#">About Us</a>
                         <a href="#footer">Contact Us</a>
-                        <a href="#">Sign In</a>
-                        <a href="#">Register</a>
+                        <a href="#login" id="trigger-login-mob">Log In</a>
+                        <a href="#signup" id="trigger-signup-mob">Register</a>
                     </div>
                 </div>
             </div>
             <div id="navbar">
-                <div class="logo-travel">
-                    <img src="new-logo.jpeg" class="logo">
-                    <p>tourism</p>
-                </div>
+                <a href="index.html">
+                    <div class="logo-travel">
+                        <img src="new-logo.jpeg" class="logo">
+                        <p style="color: black;">tourism</p>
+                    </div>
+                </a>
                 <div id="vert"></div>
                 <div class="become">
-                    <a id="sign" href="#">Sign In</a>
-                    <button class="button1">REGISTER</button>
+                    <a href="#login" class="sign1" id="trigger-login">LOG IN</a> | <a href="#signup" class="sign2" id="trigger-signup">SIGN UP</a>
                 </div>
             </div>
         </header>
         <main>
+            <section id="signup" class="hide">
+                <a href="index.html"><div id="close-login1" class="close-login"></div></a>
+                <div class="sign-up-cont">
+                    <h3>Sign up to get started</h3>
+                    <h3 class="already">Already registered <a href="#login" class="log" id="trigger-login2">Log in</a></h3>
+                    <form>
+                        <label for="name" id="label">Name</label><br>
+                        <input type="text" id="name" placeholder="Enter your name" class="field" required>
+                        <br>
+                        <label for="name" id="label">Email Address</label><br>
+                        <input type="text" id="name" placeholder="Enter your email address" class="field" required>
+                        <br>
+                        <label for="name" id="label">Password</label><br>
+                        <input type="password" id="name" placeholder="Enter your password" class="field" required>
+                        <br>
+                        <label for="name" id="label">Repeat Password</label><br>
+                        <input type="password" id="name" placeholder="Confirm password" class="field" required>
+                        <br>
+                        <div class="remember">
+                            <input type="checkbox" id="agree" name="save-details" value="remember">
+                            <label for="agree">I Agree to the <a href="#" class="log">Terms & Conditions</a> and <a href="#" class="log">Privacy Policy</a>.</label>
+                        </div>
+                        <button type="submit" class="submit-button" id="submit">SIGN UP</button>
+                    </form>
+                </div>
+            </section>
+            <section id="login" class="hide">
+                <a href="index.html"><div id="close-login2" class="close-login"></div></a>
+                <div class="sign-up-cont">
+                    <h3>LOGIN</h3>
+                    <h3 class="already">Don't have an Account? <a href="#signup" class="log" id="trigger-signup2">Sign up</a></h3>
+                    <form>
+                        <label for="name" id="label">Email Address</label><br>
+                        <input type="text" id="name" placeholder="Enter your email address" class="field" required>
+                        <br>
+                        <label for="name" id="label">Password</label><br>
+                        <input type="password" id="name" placeholder="Enter your password" class="field" required>
+                        <br>
+                        <div class="remember">
+                            <input type="checkbox" id="remember" name="save-details" value="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <button type="submit" class="submit-button" id="submit">LOG IN</button>
+                    </form><br>
+                    <a href="#" class="log">Forgot password?</a>
+                </div>
+            </section>
             <section id="home"> 
                 <div class="home-lay">
                     <div class="first-cont">
@@ -51,7 +102,7 @@
                 </div>
             </section>
             <section id="second">
-                <h1>UPCOMING TOURS</h1><br>
+                <h1 class="ongoing">ONGOING TOURS</h1><br>
                 <div class="world-cup-div">
                     <img src="2022_FIFA_World_Cup 1.svg" class="world-cup">
                     <div class="enjoy-div">
@@ -61,7 +112,7 @@
                 </div>
             </section>
             <section id="third">
-                <h1>TOURS</h1><br>
+                <h1>UPCOMING TOURS</h1><br>
                 <div class="spec-cont">
                     <div class="dest">
                         <div class="where-from">
@@ -116,7 +167,6 @@
                     </div>
                 </div>
             </section>
-            
         </main>
         <footer id="footer">
             <div class="over">
@@ -163,54 +213,6 @@
                 </div>
             </div>
         </footer>
-        <script>
-            window.onscroll = function spread() {
-                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                    document.getElementById("navbar").style.width = "90%";
-                    document.getElementById("navbar").style.paddingLeft = "40px";
-                    document.getElementById("navbar").style.boxSizing = "border-box";
-                    document.getElementById("vert").style.transform = "translateY(-100px)";
-                    document.getElementById("sign").style.display = "block";
-                } else {
-                    document.getElementById("navbar").style.width = "28%";
-                    document.getElementById("navbar").style.paddingLeft = "0";
-                    document.getElementById("vert").style.transform = "translateY(0)";
-                    document.getElementById("sign").style.display = "none";
-                }
-            }
-
-
-            //the dropdown menu
-            const dropTray = document.getElementById("myDropdown");
-                    //the open dropdown menu button
-                    const openTray = document.getElementById("dropbtn");
-                    //the close dropdown button
-                    const closeTray = document.getElementById("close-dropdown");
-                    //the nav bar
-                    const navBar = document.getElementById("mobile-navbar");
-
-                    //when user clicks the open dropdown button 
-                    openTray.onclick = () => {
-                        navBar.style.backgroundColor = "#f4f7f6";
-                        closeTray.style.display = "block";
-                        dropTray.style.display = "block";
-                        openTray.style.display = "none";
-                    }
-                    //when user clicks the close dropdown button 
-                    closeTray.onclick = function() {
-                        dropTray.style.display = "none";
-                        closeTray.style.display = "none";
-                        openTray.style.display = "block";
-                        navBar.style.backgroundColor = "rgba(0,0,0,0)";
-                    }
-                    //when user clicks anywhere on the dropdown 
-                    dropTray.onclick = function() {
-                        dropTray.style.display = "none";
-                        closeTray.style.display = "none";
-                        openTray.style.display = "block";
-                        navBar.style.backgroundColor = "rgba(0,0,0,0)";
-                    }
-
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

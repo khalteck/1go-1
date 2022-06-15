@@ -52,14 +52,14 @@ header {
     transition: all 1s ease-out;
 }
 .logo-travel {
-    width: 120px;
+    width: fit-content;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo-travel p{
-    margin-left: 10px;
+    margin: 0 0 0 10px;
     font-weight: 900;
 }
 .logo {
@@ -75,31 +75,38 @@ header {
     background-color: #1f66d0;
     transition: all 1s ease-out;
 }
-.become {
-    width: fit-content;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    left: -25px;
-}
-#sign {
-    margin-right: 20px;
-    font-weight: 900;
-    font-size: 26px;
-    color: black;
-    transition: all 1s ease-out;
+.hide {
     display: none;
 }
-#sign:hover {
+.become {
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    padding: 12px 25px;
+    color: white;
+    background-color: #1f66d0;
+    border: 1px solid #1f66d0; 
+    border-radius: 40px;
+}
+.sign1 {
+    margin-right: 10px;
+    color: white;
+}
+.sign2 {
+    margin-left: 10px;
+    color: white;
+}
+.sign1:hover {
+    text-decoration: underline;
+}
+.sign2:hover {
     text-decoration: underline;
 }
 .button1 {
     background-color: #1f66d0;
     color: #ffffff;
-    font-size: 13px;
-    font-family: cursive;
+    font-size: 12px;
+    font-family: "Dosis", sans-serif;
     font-weight: 900;
     border: 2px solid #1f66d0;
     margin: 0;
@@ -151,7 +158,7 @@ main {
     background-color: inherit;
     color: #ffffff;
     font-size: 20px;
-    font-family: cursive;
+    font-family: "Dosis", sans-serif;
     font-weight: 900;
     border: 2px solid #1f66d0;
     margin: 0;
@@ -180,7 +187,7 @@ main {
     color: #ffffff;
     font-size: 18px;
     font-weight: 900;
-    font-family: cursive;
+    font-family: "Dosis", sans-serif;
     border-radius: 20px;
     transition: all 0.3s ease-out;
 }
@@ -276,14 +283,99 @@ main {
     font-size: 19px;
     font-weight: 900;
 }
+/*the sign up pop up page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#signup, #login {
+    width: 100%;
+    height: fit-content;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    font-size: 16px;
+    background-color: #f4f7f6;
+    text-align: center;
+    z-index: 998;
+}
+#close-login1, #close-login2 {
+    width: 40px;
+    height: 40px;
+    background-image: url("https://img.icons8.com/plumpy/344/macos-close.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    cursor: pointer;
+    z-index: 1111;
+}
+.sign-up-cont {
+    width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: left;
+    border-radius: 5px;
+}
+h3 {
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+.already {
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+#label {
+    font-weight: 400;
+}
+.field {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+}
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1f66d0;
+    border: 1px solid #1f66d0;
+    margin-top: 20px;
+    font-family: "Dosis", sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remember {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.log {
+    font-weight: 100;
+    text-decoration: underline;
+    color: blue;
+}
+.log:hover {
+    text-decoration: none;
+    color: blue;
+}
+/*the sign up pop up page ends!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 #second {
     width: 100%;
     height: fit-content;
     margin-top: 50px;
 }
 h1 {
-    width: 85%;
-    margin: auto;
+    width: 100%;
+}
+.ongoing {
+    margin-left: 7%;
 }
 .world-cup-div {
     width: 100%;
@@ -878,7 +970,7 @@ a:hover {
         color: #ffffff;
         font-size: 18px;
         font-weight: 900;
-        font-family: cursive;
+        font-family: "Dosis", sans-serif;
         border-radius: 20px;
         transition: all 0.3s ease-out;
         display: none;
@@ -963,7 +1055,7 @@ a:hover {
         cursor: pointer;
     }
     .where-img {
-        width: 38%;
+        width: auto;
         height: 100%;
     }
     .where-text-cont2 {
@@ -976,6 +1068,91 @@ a:hover {
         font-size: 19px;
         font-weight: 900;
     }
+    /*the sign up pop up page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#signup, #login {
+    width: 100%;
+    height: fit-content;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    background-color: #f4f7f6;
+    text-align: center;
+    z-index: 998;
+}
+
+#close-login1, #close-login2 {
+    width: 40px;
+    height: 40px;
+    background-image: url("https://img.icons8.com/plumpy/344/macos-close.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    cursor: pointer;
+    z-index: 1111;
+    display: none;
+}
+.sign-up-cont {
+    width: 90%; 
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    border-radius: 5px;
+}
+h3 {
+    font-size: 25px;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+.already {
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+#label {
+    font-weight: 400;
+}
+.field {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+}
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1f66d0;
+    border: 1px solid #1f66d0;
+    margin-top: 20px;
+    font-family: "Dosis", sans-serif;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.remember {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.log {
+    font-weight: 100;
+    text-decoration: underline;
+    color: blue;
+}
+.log:hover {
+    text-decoration: none;
+    color: blue;
+}
+/*the sign up pop up page ends!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     #second {
         width: 100%;
         height: fit-content;
@@ -1172,8 +1349,9 @@ a:hover {
         display: block;
     }
     .flex-block {
-        width: 100%;
+        width: 90%;
         height: fit-content;
+        margin: auto;
         display: block;
         justify-content: space-between;
     }
