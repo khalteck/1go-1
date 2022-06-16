@@ -538,9 +538,20 @@ h2 {
     padding: 0 0 30px 0;
     box-sizing: border-box;
 }
-.exp-cont {
+#exp-cont {
     width: 100%;
     margin-bottom: 70px;
+}
+.fadey {
+    transition: all 0.5s ease-out;
+}
+.fadeyOut { 
+    opacity: 0;
+    transform: translateX(-50%);
+}
+.fadeyIn { 
+    opacity: 1;
+    transform: translateX(0%);
 }
 .exp-img-cont {
     width: 100%;
@@ -1303,9 +1314,20 @@ h3 {
         padding: 0 0 30px 0;
         box-sizing: border-box;
     }
-    .exp-cont {
+    #exp-cont {
         width: 100%;
         margin-bottom: 50px;
+    }
+    .fadey {
+        transition: all 0.5s ease-out;
+    }
+    .fadeyOut { 
+        opacity: 0;
+        transform: translateX(-60%);
+    }
+    .fadeyIn { 
+        opacity: 1;
+        transform: translateX(0%);
     }
     .exp-img-cont {
         width: 100%;
