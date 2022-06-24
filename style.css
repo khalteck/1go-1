@@ -407,7 +407,7 @@ h3 {
 #popup-download {
     width: 100%;
     height: fit-content;
-    background-color: rgba(244, 247, 246, 0.7);
+    background-color: rgba(244, 247, 246, 0.8);
     padding: 50px 0;
     box-sizing: border-box;
     text-align: center;
@@ -415,7 +415,7 @@ h3 {
     position: fixed;
     bottom: 0;
     opacity: 0;
-    animation: show 1s ease;
+    animation: show 3s ease;
 }
 @keyframes show {
     0% {
@@ -1289,12 +1289,12 @@ h3 {
     margin-bottom: 20px;
 }
 .down-span {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
     color: #1f66d0;
 }
 .down-icon {
-    width: 250px;
+    width: 200px;
     height: auto;
     margin: 5px auto;
 }
@@ -1303,15 +1303,16 @@ h3 {
 #popup-download {
     width: 100%;
     height: fit-content;
-    background-color: rgba(244, 247, 246, 0.7);
-    padding: 50px 0;
+    background-color: rgba(244, 247, 246, 0.8);
+    padding: 50px 20px;
     box-sizing: border-box;
     text-align: center;
     z-index: 998;
     position: fixed;
     bottom: 0;
     opacity: 0;
-    animation: show 1.5s ease;
+    animation: show 3s ease;
+    -webkit-animation: show 3s ease;
 }
 @keyframes show {
     0% {
@@ -1320,6 +1321,14 @@ h3 {
     }
     100% {
         opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes show {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
         transform: translateY(0);
     }
 }
