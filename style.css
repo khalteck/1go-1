@@ -294,7 +294,7 @@ main {
     text-align: center;
     z-index: 998;
 }
-#close-login1, #close-login2 {
+#close-login1, #close-login2, #close-popup {
     width: 40px;
     height: 40px;
     background-image: url("https://img.icons8.com/plumpy/344/macos-close.png");
@@ -366,6 +366,68 @@ h3 {
     color: blue;
 }
 /*the sign up pop up page ends!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*the download app pop up page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#download-sec {
+    width: 100%;
+    height: fit-content;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    font-size: 16px;
+    background-color: #f4f7f6;
+    text-align: center;
+    z-index: 998;
+}
+.download-cont {
+    width: 75%;
+    height: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: left;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.download-illus {
+    width: 50%;
+    height: auto;
+}
+.down-span {
+    font-size: 50px;
+    font-weight: 900;
+    color: #1f66d0;
+}
+.down-icon {
+    width: 200px;
+    height: auto;
+}
+/*the download app pop up page ends!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*popup download modal!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#popup-download {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(244, 247, 246, 0.7);
+    padding: 50px 0;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 998;
+    position: fixed;
+    bottom: 0;
+    opacity: 0;
+    animation: show 1s ease;
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*popup download modal!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 #second {
     width: 100%;
     height: fit-content;
@@ -547,7 +609,7 @@ h2 {
 }
 .fadeyOut { 
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-20%);
 }
 .fadeyIn { 
     opacity: 1;
@@ -576,7 +638,9 @@ h2 {
     box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
     display: inline-block;
     margin: 0 15px 0 0;
-    border-radius: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
 }
 #footer {
     width: 100%;
@@ -1194,6 +1258,72 @@ h3 {
     color: blue;
 }
 /*the sign up pop up page ends!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*the download app pop up page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#download-sec {
+    width: 100%;
+    height: fit-content;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    background-color: #f4f7f6;
+    text-align: center;
+    z-index: 998;
+}
+.download-cont {
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: left;
+    border-radius: none;
+    display: block;
+    position: relative;
+}
+.down-icons-cont {
+    text-align: center;
+}
+.download-illus {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.down-span {
+    font-size: 60px;
+    font-weight: 900;
+    color: #1f66d0;
+}
+.down-icon {
+    width: 250px;
+    height: auto;
+    margin: 5px auto;
+}
+/*the download app pop up page ends!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*popup download modal!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#popup-download {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(244, 247, 246, 0.7);
+    padding: 50px 0;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 998;
+    position: fixed;
+    bottom: 0;
+    opacity: 0;
+    animation: show 1.5s ease;
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*popup download modal!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     #second {
         width: 100%;
         height: fit-content;
@@ -1353,7 +1483,9 @@ h3 {
         box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
         display: inline-block;
         margin: 0 15px 0 0;
-        border-radius: 20px;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
     }
     #footer {
         width: 100%;

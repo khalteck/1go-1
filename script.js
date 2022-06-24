@@ -71,11 +71,21 @@ signup.addEventListener("click", () => {
     document.getElementById("login").classList.add("hide")
     document.getElementById("signup").classList.remove("hide")
 });
-document.querySelector(".close-login").addEventListener("click", () => {
+//to close the sign up page
+document.getElementById("close-login2").addEventListener("click", () => {
     home.classList.remove("hide");
     second.classList.remove("hide");
     third.classList.remove("hide");
-    fourth.classList.add("hide")
+    fourth.classList.remove("hide");
+    document.getElementById("login").classList.add("hide");
+    document.getElementById("signup").classList.add("hide");
+})
+//to close the ogin page
+document.getElementById("close-login1").addEventListener("click", () => {
+    home.classList.remove("hide");
+    second.classList.remove("hide");
+    third.classList.remove("hide");
+    fourth.classList.remove("hide");
     document.getElementById("login").classList.add("hide");
     document.getElementById("signup").classList.add("hide");
 })
@@ -118,7 +128,7 @@ document.getElementById("trigger-signup-mob").addEventListener("click", () => {
 const observerOptions = {
     root: null,
     rootMargin: "0px",
-    threshold: 0.3
+    threshold: 0.2
   };
 
   function observerCallback(entries, observer) {
@@ -137,3 +147,15 @@ const observerOptions = {
 
   const fadeElms = document.querySelectorAll('.fadey');
   fadeElms.forEach(el => observer.observe(el));
+
+
+//the download popup
+const popupDownload = document.getElementById("popup-download");
+window.addEventListener("load", function() {
+    popupDownload.classList.remove("hide")
+    popupDownload.style.opacity = "1"
+});
+document.getElementById("close-popup").addEventListener("click", () => {
+    popupDownload.classList.add("hide")
+    document.getElementById("download-sec").classList.add("hide");
+});
