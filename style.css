@@ -535,64 +535,6 @@ h2 {
     font-size: 25px;
     font-weight: 500;
 }
-/*.why {
-    width: 100%;
-    height: fit-content;
-    margin: auto;
-    padding-top: 100px;
-    text-align: center;
-}
-.feature-cont {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-}
-.feature-box {
-    width: 23%;
-    height: 300px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #f1f0f0;
-    box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
-}
-
-.vector {
-    width: 35%;
-    height: 90px;
-    border-radius: 10px;
-    margin: auto;
-    background-image: url("https://img.icons8.com/external-line-lima-studio/344/4a90e2/external-speed-5g-signal-line-lima-studio-2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.vector2 {
-    width: 35%;
-    height: 90px;
-    border-radius: 10px;
-    margin: auto;
-    background-image: url("https://img.icons8.com/external-flatart-icons-solid-flatarticons/2x/4a90e2/external-save-money-shopping-and-commerce-flatart-icons-solid-flatarticons.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.vector3 {
-    width: 35%;
-    height: 90px;
-    border-radius: 10px;
-    margin: auto;
-    background-image: url("https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/344/4a90e2/external-safety-customer-service-xnimrodx-lineal-xnimrodx.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.vector4 {
-    width: 35%;
-    height: 90px;
-    border-radius: 10px;
-    margin: auto;
-    background-image: url("https://img.icons8.com/ios-filled/344/4a90e2/online-support.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
 #fourth {
     width: 85%;
     height: fit-content;
