@@ -151,10 +151,17 @@ const observerOptions = {
 
 //the download popup
 const popupDownload = document.getElementById("popup-download");
+
 window.addEventListener("load", function() {
-    popupDownload.classList.remove("hide")
-    popupDownload.style.opacity = "1"
+    setTimeout(() => {
+        popupDownload.classList.remove("hide")
+        popupDownload.style.opacity = "1"
+    }, 5000)
 });
+
+AOS.init();
+
+
 document.getElementById("close-popup").addEventListener("click", () => {
     popupDownload.classList.add("hide")
     document.getElementById("download-sec").classList.add("hide");
