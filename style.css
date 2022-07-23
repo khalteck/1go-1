@@ -58,15 +58,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.logo-travel p{
-    margin: 0 0 0 10px;
-    font-weight: 900;
-}
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: auto;
     border-radius: 40px;
-    border: 4px solid #1f66d0;
 }
 #vert {
     width: 5px;
@@ -83,18 +78,17 @@ header {
     height: fit-content;
     font-size: 14px;
     padding: 12px 25px;
-    color: white;
-    background-color: #1f66d0;
-    border: 1px solid #1f66d0; 
+    color: black;
+    border: 4px solid #1f66d0; 
     border-radius: 40px;
 }
 .sign1 {
     margin-right: 10px;
-    color: white;
+    color: black;
 }
 .sign2 {
     margin-left: 10px;
-    color: white;
+    color: black;
 }
 .sign1:hover {
     text-decoration: underline;
@@ -909,22 +903,17 @@ a:hover {
         border: none;
     }
     .logo-travel {
-        width: 105px;
-        height: 100%;
+        width: fit-content;
+        height: fit-content;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .logo-travel p{
-        margin-left: 9px;
-        font-weight: 700;
-        font-size: 20px;
-    }
+    
     .logo {
-        width: 30px;
-        height: 30px;
-        border-radius: 30px;
-        border: 4px solid #1f66d0;
+        width: 100px;
+        height: auto;
+        border-radius: 40px;
     }
     #vert {
         width: 5px;
@@ -977,7 +966,7 @@ a:hover {
     }
     #home {
         width: 100%;
-        height: 600px;
+        height: 500px;
         background-image: url("ross-sneddon-Kf7hX64kLw0-unsplash.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -986,7 +975,7 @@ a:hover {
     }
     .home-lay {
         width: 100%;
-        height: 600px;
+        height: 500px;
         background-color: rgba(31, 102, 208, 0.1);
         text-align: center;
         margin: 0;
@@ -1311,7 +1300,7 @@ h3 {
     }
     .world-cup-div {
         width: 100%;
-        height: 750px;
+        height: 500px;
         background-image: url("unsplash_ODTTeCQRGQY.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -1334,7 +1323,7 @@ h3 {
         justify-content: space-between;
         align-items: center;
         position: relative;
-        top: 130px;
+        top: 35px;
     }
     .exp-text {
         font-size: 30px;
