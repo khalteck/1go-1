@@ -96,30 +96,31 @@ document.getElementById("close-popup").addEventListener("click", () => {
 });
 
 /*to submit signup data!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-function sendData() {
-    let signupData = new FormData(document.getElementById("signupForm"));
-    fetch("#", {
+let submitReg = document.getElementById("submit-reg");
+submitReg.addEventListener("click", sendData(e));
+function sendData(e) {
+    e.preventDefault();
+    let signupData = new FormData();
+    signupData.append("firstname", document.getElementById("firstname").value);
+    signupData.append("lasttname", document.getElementById("lastname").value);
+    signupData.append("email", document.getElementById("email").value);
+    signupData.append("password", document.getElementById("pass-field1").value);
+    signupData.append("repeatpassword", document.getElementById("pass-field2").value);
+
+    fetch("https://explore.pythonanywhere.com/api/register", {
       method: "POST",
-      body: JSON.stringify(signupData)
+      body: JSON.stringify(signupData),
+      headers: {"Content-type": "application/json; charset=UTF-8"}
     })
-   //return server response as text
-    .then((result) => {
-      if (result.status != 200) { throw new Error("Bad Server Response"); }
-      return result.text();
-    })
-    //server response
-    .then((response) => {
-      console.log(response);
-      if (response.error) {
-        alert("Invalid details"); /*displays error message*/
-      } else {
-        window.open(
-          "target.html"
-        ); /*opens the target page while Id & password matches*/
-      }
+   //return server response as json
+    .then(response => response.json()) 
+    //console.log response
+    .then((json) => {
+      console.log(json);
+      window.open("login.html");
     })
     //handle errors
-    .catch((error) => { console.log(error); });
+    .catch(err => console.log(err));
   }
 
   /*to login!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/

@@ -65,32 +65,31 @@
                 <div class="sign-up-cont">
                     <h3>Sign up to get started</h3>
                     <h3 class="already">Already registered <a href="login.html" class="log">Log in</a></h3>
-                    <form id="signupForm" onsubmit="sendData()">
-                        <label for="name" id="label">First name</label><br>
-                        <input type="text" id="name" name="firstname" placeholder="Enter your first name" class="field" required>
+                    <form>
+                        <label for="firstname" id="label">First name</label><br>
+                        <input type="text" id="firstname" placeholder="Enter your first name" class="field" required>
                         <br>
-                        <label for="name" id="label">Last name</label><br>
-                        <input type="text" id="name" name="lastname" placeholder="Enter your Last name" class="field" required>
+                        <label for="lastnamename" id="label">Last name</label><br>
+                        <input type="text" id="lastname" placeholder="Enter your Last name" class="field" required>
                         <br>
-                        <label for="name" id="label">Email Address</label><br>
-                        <input type="email" id="name" name="email" placeholder="Enter your email address" class="field" required>
+                        <label for="email" id="label">Email Address</label><br>
+                        <input type="email" id="email" placeholder="Enter your email address" class="field" required>
                         <br>
                         <div style="position: relative;">
-                            <label for="name" id="label">Password </label><br>
-                            <input type="password" id="pass-field1" name="password" placeholder="Enter your password" class="field pass-input" required>
+                            <label for="pass-field1" id="label">Password </label><br>
+                            <input type="password" id="pass-field1" placeholder="Enter your password" class="field pass-input" required>
                             <i class="fas fa-eye" style="color: lightgray; position: absolute; right: 15px; top: 37px; cursor: pointer;" onclick="togglePsw()"></i>
                         </div>
                         <div style="position: relative;">
-                            <label for="name" id="label">Repeat Password</label><br>
-                            <input type="password" id="pass-field2" name="repeatpassword" placeholder="Confirm password" class="field pass-input" required>
+                            <label for="pass-field2" id="label">Repeat Password</label><br>
+                            <input type="password" id="pass-field2" placeholder="Confirm password" class="field pass-input" required>
                             <i class="fas fa-eye" style="color: lightgray; position: absolute; right: 15px; top: 37px; cursor: pointer;" onclick="togglePsw()"></i>
                         </div>
                         <br>
                         <div class="remember">
-                            <input type="checkbox" id="agree" name="save-details" value="remember" required>
-                            <label for="agree">I Agree to the <a href="#" class="log">Terms & Conditions</a> and <a href="#" class="log">Privacy Policy</a>.</label>
+                            <label for="agree">By signing up, you agree to the <a href="#" class="log">Terms & Conditions</a> and <a href="#" class="log">Privacy Policy</a>.</label>
                         </div>
-                        <button type="submit" class="submit-button" id="submit">SIGN UP</button>
+                        <button type="submit-reg" class="submit-button" id="submit">submit</button>
                     </form>
                 </div>
             </section>
