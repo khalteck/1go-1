@@ -120,7 +120,7 @@ main {
 #home {
     width: 100%;
     height: 105vh;
-    background-image: url("ross-sneddon-Kf7hX64kLw0-unsplash.jpg");
+    background-image: url("./images/ross-sneddon-Kf7hX64kLw0-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -80px;
@@ -436,7 +436,7 @@ h1 {
 .world-cup-div {
     width: 100%;
     height: 750px;
-    background-image: url("unsplash_ODTTeCQRGQY.png");
+    background-image: url("./images/unsplash_ODTTeCQRGQY.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -520,7 +520,7 @@ h1 {
 .img1 {
     width: 100%;
     height: 100%;
-    background: url("illustration.jpg");
+    background: url("./images/illustration.jpg");
     border-radius: 0 20px 20px 0;
     background-size: cover;
     background-position: center;
@@ -605,7 +605,7 @@ h2 {
     height: 350px;
     color: #ffffff;
     font-size: 17px;
-    background-image: url("pexels-mike-b-133826.jpg");
+    background-image: url("./images/pexels-mike-b-133826.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -967,7 +967,7 @@ a:hover {
     #home {
         width: 100%;
         height: 500px;
-        background-image: url("ross-sneddon-Kf7hX64kLw0-unsplash.jpg");
+        background-image: url("./images/ross-sneddon-Kf7hX64kLw0-unsplash.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
@@ -1301,7 +1301,7 @@ h3 {
     .world-cup-div {
         width: 100%;
         height: 500px;
-        background-image: url("unsplash_ODTTeCQRGQY.png");
+        background-image: url("./images/unsplash_ODTTeCQRGQY.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1371,7 +1371,7 @@ h3 {
         background-color: #f1f1f1;
         border-radius: 5px;
         box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
-        background-image: url("tayla-kohler-7I8HfObsLiY-unsplash.jpg");
+        background-image: url("./images/tayla-kohler-7I8HfObsLiY-unsplash.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -1393,7 +1393,7 @@ h3 {
     .img1 {
         width: 100%;
         height: auto;
-        background: url("illustration.jpg");
+        background: url("./images/illustration.jpg");
         background-size: cover;
         background-position: right;
     }
@@ -1480,7 +1480,7 @@ h3 {
         height: 520px;
         color: #ffffff;
         font-size: 17px;
-        background-image: url("pexels-mike-b-133826.jpg");
+        background-image: url("./images/pexels-mike-b-133826.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
